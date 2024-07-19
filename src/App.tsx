@@ -2,6 +2,8 @@ import ListGroup from "./components/ListGroup.tsx"
 import Button from './components/Button.tsx'
 import {useState} from 'react'
 import Alert from "./components/Alert.tsx";
+import List from './components/List.tsx';
+
 const App = () => {
   let list = [
     'New York',
@@ -26,6 +28,9 @@ const App = () => {
     
     <br />
     <ListGroup items={list} heading='Cities List'/>
+    <br />
+    <br />
+    <List items={list} heading="NEW LIST" />
     </>
   )
 }

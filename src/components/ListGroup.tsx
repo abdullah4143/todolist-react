@@ -13,7 +13,7 @@ const ListGroup = ({items , heading} : ListGroupProps) => {
   
  return (
     <>
-      <h1>{heading}</h1>
+      <h1 className="h1">{heading}</h1>
       <ul className="list-group">
         {items.map((item,index)=>{
           return <li key={item} className={selecteditem === index ?
