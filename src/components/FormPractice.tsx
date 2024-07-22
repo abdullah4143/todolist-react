@@ -11,7 +11,7 @@ type FormData = z.infer<typeof schema>;
 
 const FormPractice = () => {
 
-    const {register , handleSubmit , formState : {errors}} = useForm<FormData>({resolver: zodResolver(schema)});
+    const {register , handleSubmit , formState : {errors , isValid}} = useForm<FormData>({resolver: zodResolver(schema)});
 
     const onSubmit = (data : FieldValues) => console.log(data);
 
@@ -38,7 +38,7 @@ const FormPractice = () => {
 
         </div>
         <div className='form-group'>
-            <button type="submit" className='btn btn-primary'>Submit</button>
+            <button type="submit" disabled={!isValid} className='btn btn-primary'>Submit</button>
         </div>
     </form>
   )
