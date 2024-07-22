@@ -3,7 +3,7 @@
 // import {useState} from 'react'
 // import Alert from "./components/Alert.tsx";
 // import List from './components/List.tsx';
-import Form from "./components/Form.tsx";
+// import Form from "./components/Form.tsx";
 import FormPractice from "./components/FormPractice.tsx";
 
 const App = () => {

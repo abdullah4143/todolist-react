@@ -3,8 +3,8 @@ import { FieldValues, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod/src/zod.js';
 
 const schema = z.object({
-    name: z.string().min(8),
-    age: z.number().min(18),
+    name: z.string().min(8, {message: 'Name must contain minimum of 8 characters'}),
+    age: z.number().min(18 , {message: 'Age must be greater than 18 to apply'}),
 })
 
 type FormData = z.infer<typeof schema>;

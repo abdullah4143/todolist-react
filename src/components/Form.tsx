@@ -3,8 +3,8 @@ import { z} from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 
 const schema = z.object({
-  name: z.string().min(3),
-  age: z.number().min(18),
+  name: z.string().min(3,{message : 'Name must contain minimum of three characters'}),
+  age: z.number().min(18, {message: 'Age must be greater than 18 to apply'}),
 });
 
 type FormData = z.infer<typeof schema>;
