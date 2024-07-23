@@ -7,13 +7,11 @@ interface ListGroupProps {
 
 const ListGroup = ({items , heading} : ListGroupProps) => {
 
-
   let [selecteditem, setSelecteditem] = useState(-1);
-
   
- return (
+  return (
     <>
-      <h1 className="h1">{heading}</h1>
+      <h1>{heading}</h1>
       <ul className="list-group">
         {items.map((item,index)=>{
           return <li key={item} className={selecteditem === index ?

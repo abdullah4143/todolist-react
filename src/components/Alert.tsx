@@ -6,7 +6,7 @@ interface AlertProps {
     onAlertClose: () => void;
 }
 
-const Alert = ({children ,color,onAlertClose} : AlertProps) => {
+const Alert = ({children , color, onAlertClose} : AlertProps) => {
     
   return (
     <div className={`alert alert-${color} alert-dismissible`} role="alert">

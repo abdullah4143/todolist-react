@@ -4,7 +4,9 @@
 // import Alert from "./components/Alert.tsx";
 // import List from './components/List.tsx';
 // import Form from "./components/Form.tsx";
-import FormPractice from "./components/FormPractice.tsx";
+// import FormPractice from "./components/FormPractice.tsx";
+
+import Users from "./components/Users"
 
 const App = () => {
   // let list = [
@@ -35,7 +37,8 @@ const App = () => {
     // <List items={list} heading="NEW LIST" />
     // </>
     <>
-    <FormPractice></FormPractice>
+    {/* <FormPractice></FormPractice> */}
+    <Users></Users>
     </>
   )
 }
